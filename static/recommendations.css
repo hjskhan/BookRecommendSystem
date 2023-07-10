@@ -1,0 +1,265 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../static/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    /* height: 100vh; */
+}
+
+body::before {
+    content: "";
+    background-position: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 25vh;
+    flex-direction: row;
+}
+
+nav h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* Adjust the height as needed */
+}
+
+.row1,
+.row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.book {
+    display: inline-block;
+    width: 250px;
+    /* height: 500px; */
+    margin: 10px;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.book img {
+    width: auto;
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+.book h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.book p {
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.book a {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #e50914;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container.warning {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.warning p {
+    font-size: 10rem;
+    font-weight: 700;
+}
+
+/* Media queries for small devices */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    .container.warning {
+        height: 100vh;
+    }
+
+    .container.warning p {
+        font-size: 20rem;
+    }
+
+
+    body {
+        background-image: url(../static/img/bg-mobile.jpg);
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav h1 {
+        font-size: 5rem;
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 250px;
+        margin: 35px;
+    }
+
+    .container {
+        align-items: flex-start;
+        /* Align items to the top */
+        height: auto;
+        padding: 10px;
+    }
+
+    .row1,
+    .row2 {
+        flex-wrap: wrap;
+        /* Allow cards to wrap onto new lines */
+    }
+
+    .book {
+        width: 100%;
+        margin: 30px;
+        padding: 20px;
+        border-radius: 25px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin: 20px 0;
+        font-size: 3.2rem;
+    }
+
+    .book img {
+        width: 40%;
+        margin-top: 50px;
+        height: auto;
+    }
+
+    .book h2 {
+        font-size: 3.7rem;
+    }
+
+    .book p {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .book a {
+        font-size: 3.2rem;
+        height: 100px;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    /* Styles */
+    body {
+        background-image: url(../static/img/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+    }
+
+    body::before {
+        content: "";
+        background-position: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+
+    nav {
+        height: 10vh;
+    }
+
+    nav h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+
+    .book {
+        width: 300px;
+    }
+
+    .book img {
+        margin-top: 10px;
+    }
+
+    .book h2 {
+        font-size: 25px;
+    }
+
+    .book p {
+        margin: 5px 0;
+        font-size: 20px;
+    }
+
+    .book a {
+        font-size: 22px;
+        font-weight: 700;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation System</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/"><img src="../static/img/logo.png" class="logo"></a>
+    </nav>
+    <form action="/recommend" method="post">
+
+        <div class="container">
+            <div class="row1">
+                <div class="head">
+                    <h1>Book Recommend System</h1>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="Search">
+                    <input type="text" placeholder="Search for Books..."  name="user_text" id="user_text" required>
+                    <button name="user_text" value="Get Recommendations">Search</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </body>
+</html>
+

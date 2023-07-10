@@ -1,0 +1,173 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color and font styles */
+body {
+    background-image: url(../static/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* Add position relative */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+body::before {
+    content: "";
+    background-position: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+    z-index: -1; /* Place it behind the content */
+}
+
+/* Style the navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* padding: 10px; */
+    height: 15vh;
+    flex-direction: column;
+}
+
+.head {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    /* margin: 20vh; */
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+/* Style the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    /* Adjust the height as needed */
+    justify-content: center;
+    align-items: center;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the search input and button */
+.Search {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid #ffffff; /* Add border */
+    font-size: 16px;
+    width: 400px;
+    height: 50px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+button:hover {
+    background-color: #b2070f;
+}
+
+
+/* --------------------- */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+
+nav{
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 10vh;
+}
+h1{
+  margin-bottom: 5vh;
+}
+body{
+    background-image: url(../static/img/bg-mobile.jpg);
+    height: 200vh;
+}
+
+.container {
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.Search {
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+}

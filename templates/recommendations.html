@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recommended Books</title>
+    <link rel="stylesheet" href="../static/recommendations.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/"><img src="../static/img/logo.png" class="logo"></a>
+
+        <h1>Recommended Books</h1>
+    </nav>
+    <div class="warning">
+        {% if warning %}
+        <p>{{ warning }}</p>
+    </div>
+    {% else %}
+    <div class="container">
+        <div class="row1">
+
+            <div class="book">
+                <h2>{{ title1 }}</h2>
+                <img src="{{ image1 }}" alt="Book Image">
+                <p>Author: {{ author1 }}</p>
+                <p>Published Date: {{ date1 }}</p>
+                <p>Publisher: {{ publisher1 }}</p>
+                <p>Categories: {{ cat1 }}</p>
+                <a href="{{ link1 }}" target="_blank">Preview</a>
+            </div>
+
+            <div class="book">
+                <h2>{{ title2 }}</h2>
+                <img src="{{ image2 }}" alt="Book Image">
+                <p>Author: {{ author2 }}</p>
+                <p>Published Date: {{ date2 }}</p>
+                <p>Publisher: {{ publisher2 }}</p>
+                <p>Categories: {{ cat2 }}</p>
+                <a href="{{ link2 }}" target="_blank">Preview</a>
+            </div>
+
+            <div class="book">
+                <h2>{{ title3 }}</h2>
+                <img src="{{ image3 }}" alt="Book Image">
+                <p>Author: {{ author3 }}</p>
+                <p>Published Date: {{ date3 }}</p>
+                <p>Publisher: {{ publisher3 }}</p>
+                <p>Categories: {{ cat3 }}</p>
+                <a href="{{ link3 }}" target="_blank">Preview</a>
+            </div>
+        </div>
+
+
+<div class="row2">
+
+    <div class="book">
+        <h2>{{ title4 }}</h2>
+            <img src="{{ image4 }}" alt="Book Image">
+            <p>Author: {{ author4 }}</p>
+            <p>Published Date: {{ date4 }}</p>
+            <p>Publisher: {{ publisher4 }}</p>
+            <p>Categories: {{ cat4 }}</p>
+            <a href="{{ link4 }}" target="_blank">Preview</a>
+        </div>
+        
+        <div class="book">
+            <h2>{{ title5 }}</h2>
+            <img src="{{ image5 }}" alt="Book Image">
+            <p>Author: {{ author5 }}</p>
+            <p>Published Date: {{ date5 }}</p>
+            <p>Publisher: {{ publisher5 }}</p>
+            <p>Categories: {{ cat5 }}</p>
+            <a href="{{ link5 }}" target="_blank">Preview</a>
+        </div>
+    </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
