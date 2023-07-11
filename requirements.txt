@@ -1,0 +1,8 @@
+flask
+seaborn
+sci-kit learn
+pickle
+rematplotlib
+nltk
+pandas
+numpy
