@@ -1,8 +1,8 @@
 flask
 seaborn
-sci-kit learn
-pickle
-rematplotlib
+scikit-learn
+#pickle
+matplotlib
 nltk
 pandas
 numpy
