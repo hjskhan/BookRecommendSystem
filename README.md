@@ -46,9 +46,3 @@ This repository contains a book recommendation system implemented in Python. The
 - Matplotlib
 - NLTK
 - Scikit-learn
-
-## Acknowledgements
-- The book data used in this project is sourced from [insert source link].
-
-## License
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
