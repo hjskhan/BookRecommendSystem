@@ -1,8 +1,8 @@
 # Book Recommendation System
 
-[img](/brs01.png)
-[img](/brs02.png)
-[img](/brs03.png)
+![Recommendation System Web App](/brs01.png)
+![Query Input by user](/brs02.png)
+![Results displayed](/brs03.png)
 ## Overview
 This repository contains a book recommendation system implemented in Python. The system utilizes Natural Language Processing (NLP) techniques and machine learning to recommend books based on user input.
 
